@@ -24,7 +24,7 @@ p {
     line-height: 1.4rem;
     color: var(--secondary-text-color);
 } */
-
+/*
 a {
     text-decoration: none;
 }
@@ -39,10 +39,10 @@ ul {
 }
 
 .container {
-    /* set bcoz all container set in row same alignproperly */
+
     max-width: 1180px;
     margin-inline: auto;
-    /*left side sy set hoker center m ajaiyga*/
+
     overflow: hidden;
 }
 
@@ -51,10 +51,8 @@ nav{
     right: 0;
     left: 0;
     box-shadow: 0 0 4px #bbd0e2;
-    /* position: fixed; */
     z-index: 99;
-}
-/* 
+} 
 .main-nav{
  
  padding: 8px 0px;
