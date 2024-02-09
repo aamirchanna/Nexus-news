@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/output.css">
+</head>
+
+<body>
+    <nav class="
+    py-3 px-8 bg-gray-100 grid grid-cols-1 
+    justify-items-center items-center
+    gap-y-2 lg:gap-y-0
+    md:grid-cols-2 md:justify-items-center 
+    lg:grid-cols-3
+    ">
+        <!-- with class of container nd flex  will be in line arrange  -->
+        <a href="/" class="size-12 row-span-2">
+            <img src="assets/brand-logo.png" alt="Company Logo">
+        </a>
+        <div class="w-full flex border-slate-300 rounded-full">
+            <!-- <<<<<<< HEAD -->
+            <input type="text" id="search-text"
+                class="px-4 py-2 w-5/6 border border-slate-300 rounded-full rounded-r-none" placeholder="e.g: science">
+            <button
+                class="px-2 py-2 w-1/6 border border-slate-300 border-l-0 flex justify-center bg-slate-300 hover:bg-slate-400 transition-colors rounded-full rounded-l-none"
+                id="search-button">
+                <img class="w-6 aspect-square" src="assets/icons/search.svg" alt="search icon" name="search">
+            </button>
+        </div>
+        <div id="nav-links" class="flex justify-end gap-4 ">
+            <a class="font-bold uppercase hover:opacity-80 transition-all cursor-pointer" id="ipl"
+                onclick="onNavItemClick('ipl')">IPL</a>
+            <a class="font-bold uppercase hover:opacity-80 transition-all cursor-pointer" id="finance"
+                onclick="onNavItemClick('finance')">Finance</a>
+            <a class="font-bold uppercase hover:opacity-80 transition-all cursor-pointer" id="politics"
+                onclick="onNavItemClick('politics')">Politics</a>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <!-- <<<<<<< HEAD -->
+    <div class="py-6 px-3 md:px-20 lg:py-7 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-7"
+        id="cards-container">
+        <!-- <div class="border border-slate-300 rounded-lg overflow-hidden">
+            <div class="">
+                <img class="w-full h-full min-h-64" src="https://via.placeholder.com/400x240" alt="card image"
+                    id="news-img">
+            </div>
+
+          
+            <div class="p-3 pt-0">
+                <h6 class="text-gray-400 opacity-50 py-2" id="news-source">END GADGET 27/1/24</h6>
+                <h3 class="text-base font-bold" id="news-title">This is a title</h3> -->
+                <!-- we have given here id for replace dynamically by j,s -->
+<!--                 
+                <P class="text-sm" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                    perferendis,
+                    sint fugit provident quidem quibusdam aperiam doloribus vitae eos quo tempora laudantium excepturi
+                    sunt ut,
+                    reprehenderit nulla mollitia maiores quam?</P>
+            </div>
+        </div> -->
+    </div>
+
+
+    <template id="template-news-card">
+        <div class="border border-slate-300 rounded-lg overflow-hidden cursor-pointer">
+            <div class="card-header">
+                <!-- <<<<<<< HEAD -->
+                <img class="w-full aspect-video" src="https://via.placeholder.com/400x200" alt="card image"
+                    id="news-img">
+            </div>
+
+            <div class="card-content">
+                <h6 class="text-gray-400 opacity-70 py-3" id="news-source">END GADGET 27/1/24</h6>
+                <h3 class="text-base font-bold" id="news-title">This is a title</h3>
+                <!-- we have given here id for replace dynamically by j,s -->
+                <!-- <<<<<<< HEAD -->
+                <P class="text-xs" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                    perferendis,
+                    sint fugit provident quidem quibusdam aperiam doloribus vitae eos quo tempora laudantium excepturi
+                    sunt ut,
+                    reprehenderit nulla mollitia maiores quam?</P>
+            </div>
+    </template>
+    <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
