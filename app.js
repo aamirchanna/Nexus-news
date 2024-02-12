@@ -23,11 +23,10 @@ app.get("/api/news/:query", async (req, res) => {
     } else {
       apiUrl = `https://newsapi.org/v2/everything?q=${query}&apiKey=${process.env.NEWS_API_KEY}`;
     }
-    console.log(apiUrl);
     const response = await axios.get(apiUrl);
     res.json(response.data.articles);
   } catch (error) {
-    console.error("Error fetching news", error.message);
+    // console.error("Error fetching news", error.message);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
