@@ -19,7 +19,7 @@ app.get("/api/news/:query", async (req, res) => {
   try {
     let apiUrl;
     if (query.toLowerCase() === "all") {
-      apiUrl = `https://newsapi.org/v2/top-headlines?country=all&apiKey=${process.env.NEWS_API_KEY}`;
+      apiUrl = `https://newsapi.org/v2/everything?country=all&apiKey=${process.env.NEWS_API_KEY}`;
     } else {
       apiUrl = `https://newsapi.org/v2/everything?q=${query}&apiKey=${process.env.NEWS_API_KEY}`;
     }

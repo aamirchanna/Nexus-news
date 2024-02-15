@@ -12,7 +12,7 @@
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* 
 :root {
     --primary-text-color: #183b56;
     --secondary-text-color: #577592;
@@ -141,4 +141,4 @@ box-shadow: 1px 1px 8px #d4ecff;
 .news-source {
     margin: 12px 0px;
 }
-
+ */
